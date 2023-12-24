@@ -1,0 +1,53 @@
+/* Your existing styles */
+
+.footer-container {
+   background-repeat: no-repeat;
+   background-image: url("/public/footerBackground.svg");
+   background-size: contain;
+   background-position: center;
+
+   display: flex;
+   flex-direction: column;
+   height: fit-content;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+/* New media query for smaller screens */
+@media (max-width: 1190px) {
+  .footer-container {
+   background-image: url("/public/footerBackground.svg");
+    background-size: cover; /* Adjust as needed */
+  }
+}
+
+
+.footer-line{
+
+   background-image: url("/public/vector-75@2x.png");
+   background-size: cover;
+
+}
+
+
+.submit-button {
+   position: relative;
+   background-color: black; /* Green background color */
+   width: 30%;
+   height: 20%;
+   font-family: 'Bruno Ace SC';
+   color: white; /* White text color */
+   padding: 2% 2%; /* Responsive padding around text */
+   border: 2px dashed white; /* No border */
+   border-radius: 5px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+   font-size: 1vw; /* Responsive font size */
+   transition: background-color 0.3s; /* Smooth transition for background color */
+ }
+
+ /* Change background color on hover */
+ .submit-button:hover {
+   background-color: rgba(217, 217, 217, 0.05);
+ }
+
+
